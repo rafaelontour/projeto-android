@@ -120,6 +120,7 @@ img#bugdroid {
 aside {
     background-color: var(--cor01);
     padding: 20px;
+    min-width: 182px;
     border-radius: 10px;
     position: relative;
     border-radius: 10px;
@@ -127,13 +128,10 @@ aside {
 }
 
 aside > h3 {
-    position: absolute;
+    margin: -20px;
     color: white;
-    top: 0px;
-    left: 0px;
     background-color: var(--cor03);
-    padding: 10px 590px 10px 10px;
-    width: 200px;
+    padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
