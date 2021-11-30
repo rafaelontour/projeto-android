@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('../Arquivos/fontes/idroid.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:;
+}
+
+:root {
+    --cor01: #C5EBD6;
+    --cor02: #3AD07D;
+    --cor03: #298F58;
+    --cor04: #123d28;
+
+    --fonte-destaque: 'android';
+}
+
+/* Formatação do cabeçalho */
+
+header {
+    height: 240px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+    color: white;
+}
+
+header > h1 {
+    padding-top: 40px;
+    font-family: 'Bebas Neue', cursiva;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+header > p {
+    padding: 10px;
+    font-weight: 300px;
+    font-size: 1.2em;
+    width: 450px;
+    margin: auto;
+}
+
+nav {
+    position: absolute;
+    top: 215px;
+    left: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 12px 12px 7px 12px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    transition: 0.3s;
+    margin: 2.7px;
+}
+
+nav > a:hover {
+    background-color: var(--cor03);
+    color: var(--cor04);
+}
+
+/* Formatação do main */
+
+main {
+    min-width: 450px;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.452);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 30px;
+}
+
+main > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor04);
+    padding: 10px;
+}
+
+main > h2 {
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor03);
+    background-image: linear-gradient(to right, var(--cor01), white);
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+img#bugdroid {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* Formatação do aside */
+
+aside {
+    background-color: var(--cor01);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.452);
+}
+
+aside > h3 {
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+    background-color: var(--cor03);
+    padding: 10px 590px 10px 10px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    display: inline-block;
+}
+
+aside > p#aside {
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 80px;
+    float: left;
+    padding: 10px;
+    
+}
+
+ul#direita {
+    display: block;
+}
+
+/* Formatação do footer */
+
+footer {
+    background-color: var(--cor03);
+}
+
+footer > p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
